@@ -5,9 +5,10 @@ The public, child-friendly companion website for **Cyber Squad: Rookie Academy**
 ## Website
 Planned live address: **https://cybersquad-hq.github.io/**
 
-- `index.html`: responsive public landing page.
+- `index.html`: responsive public landing page with a Mission 009 launch link.
+- `training/mission009/index.html`: self-contained, no-sign-in safe View Source challenge.
 - `assets/cipher.jpg` and `assets/nyx.jpg`: original character portraits used on the homepage.
-- **Current publication stage:** introductory site only. Collectible PDFs and the Mission 009 interactive training lab are still being reviewed and have **not been copied** from the private production repository.
+- **Current publication stage:** homepage and Mission 009 self-contained browser training lab are public. Collectible PDFs and the private book manuscripts, print files, and answer keys are **not** published.
 
 ## GitHub Pages publishing
 
@@ -19,7 +20,7 @@ A first deployment may take a few minutes. Once live, check the address above on
 
 - Keep unpublished book manuscripts, answer keys, and KDP print files exclusively in the private `cyber-squad-production` repository.
 - No email forms, sign-ins, comments, behavioural analytics, advertising, or personal-data collection.
-- Approve and proof all free collectibles and training materials before adding public download links.
+- The approved, self-contained Mission 009 lab is public at `training/mission009/` and only covers our own permission-based practice page. Approve each collectible before publishing it.
 - Teach ethical cybersecurity: only explore or test practice systems with permission.
 - The book is in development; the public page does not claim it is already for sale.
 
