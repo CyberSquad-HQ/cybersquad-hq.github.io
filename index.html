@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090e1d">
+<meta name="description" content="Cyber Squad Rookie Academy: an illustrated cybersecurity adventure for young codebreakers in Grades 3–6. Meet Cipher and Nyx, solve mysteries, and learn to stay safer online.">
+<meta property="og:title" content="Cyber Squad HQ | Rookie Academy">
+<meta property="og:description" content="Adventure meets digital safety. Explore the world of Cipher and Nyx.">
+<meta property="og:type" content="website">
+<title>Cyber Squad HQ | Rookie Academy</title>
+<style>
+:root{color-scheme:dark;--bg:#090e1d;--panel:#111b30;--line:#30405d;--ink:#f5f8ff;--muted:#bdc9e2;--lime:#a2fb4c;--violet:#c98eff;--cyan:#76e6ff;--gold:#ffdd83}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}
+body:before{content:"";position:absolute;top:0;left:0;width:100%;height:900px;z-index:-1;background:radial-gradient(ellipse at 20% 20%,#184d3b88,transparent 43%),radial-gradient(ellipse at 77% 22%,#402464a6,transparent 42%),linear-gradient(180deg,#0e1b2d,#090e1d);pointer-events:none}
+a{color:inherit}a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:4px}button{font:inherit}img{display:block;max-width:100%}
+.wrap{max-width:1120px;margin:auto;padding-left:24px;padding-right:24px}
+.skip{position:absolute;top:-60px;left:12px;z-index:30;background:white;color:#111;padding:12px}.skip:focus{top:12px}
+header{position:relative;z-index:10;border-bottom:1px solid #ffffff1c;background:#090e1dd9;backdrop-filter:blur(12px)}
+.header-inner{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.wordmark{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:1000;letter-spacing:.04em;font-size:1.15rem}
+.mark{width:43px;height:43px;display:grid;place-items:center;clip-path:polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%);background:var(--lime);color:#0c1820;font-size:.96rem;font-weight:1000}
+.wordmark b{color:var(--lime)}
+.navlinks{display:flex;align-items:center;gap:26px}
+.navlinks a{font-weight:750;font-size:.92rem;text-decoration:none;color:#e8edfb}.navlinks a:hover{color:var(--lime)}
+.navlinks .nav-cta{border:1px solid #a2fb4c88;color:var(--lime);padding:10px 15px;border-radius:9px}
+.menu{display:none;border:1px solid var(--line);background:#162039;color:white;padding:9px 14px;border-radius:8px;cursor:pointer}
+.eyebrow{color:var(--lime);font-weight:850;letter-spacing:.18em;text-transform:uppercase;font-size:.72rem}
+.hero{padding-top:80px;padding-bottom:98px;display:grid;grid-template-columns:1.05fr .95fr;gap:35px;align-items:center}
+h1,h2,h3,p{margin-top:0}h1{font-size:clamp(2.8rem,5.5vw,5.15rem);font-weight:1000;letter-spacing:-.055em;line-height:1.02;margin:18px 0 24px}
+.highlight{color:var(--lime)}.gradient{background:linear-gradient(95deg,var(--lime),var(--cyan),var(--violet));color:transparent;background-clip:text}
+.lede{font-size:1.16rem;color:#d3def0;max-width:530px;line-height:1.7}
+.hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin:30px 0}
+.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;padding:14px 20px;min-height:47px;border:1px solid #8db8ac;background:#19263b;color:white;border-radius:9px;font-weight:900;text-decoration:none;transition:transform .18s,background .18s}
+.btn:hover{transform:translateY(-2px);background:#263955}
+.btn-primary{background:var(--lime);color:#102016;border-color:var(--lime)}
+.btn-primary:hover{background:#d0ff9e}
+.note{font-size:.85rem;color:#b8c5d9;display:flex;align-items:center;gap:9px}
+.dot{display:inline-block;width:8px;height:8px;background:var(--lime);border-radius:50%;box-shadow:0 0 12px var(--lime)}
+.hero-art{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:14px;isolation:isolate}
+.hero-art:before{content:"";position:absolute;inset:-16px;background:linear-gradient(135deg,#7ee93a44,#9433ea44);border:1px solid #ffffff17;filter:blur(22px);border-radius:34px;z-index:-1}
+.agent-img{width:100%;height:425px;object-fit:cover;object-position:center top;border-radius:15px;border:1px solid #ffffff38;box-shadow:0 20px 50px #0009}
+.agent-img:nth-child(2){transform:translateY(28px)}
+.agent-tag{position:absolute;bottom:-39px;left:50%;transform:translateX(-50%);white-space:nowrap;background:#0e1b2b;border:1px solid #496171;border-radius:11px;padding:11px 16px;box-shadow:0 8px 25px #0008;font-size:.82rem;font-weight:900;color:var(--gold)}
+.section{padding-top:70px;padding-bottom:74px}.section-heading{margin-bottom:32px}.section h2{font-size:clamp(2rem,4vw,3.3rem);line-height:1.1;letter-spacing:-.035em;font-weight:950;margin:13px 0}
+.sub{font-size:1.04rem;color:#becee5;max-width:690px;line-height:1.65}
+.alt{background:#10192d;border-top:1px solid #273449;border-bottom:1px solid #273449}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.tile{padding:27px;border-radius:17px;background:linear-gradient(145deg,#1a2b43,#121b30);border:1px solid #38516b;min-height:245px}
+.iconbox{width:46px;height:46px;border-radius:12px;background:#a2fb4c20;color:var(--lime);display:grid;place-items:center;font-size:1.45rem;font-weight:900;margin-bottom:24px}
+.tile:nth-child(2) .iconbox{background:#c98eff20;color:var(--violet)}
+.tile:nth-child(3) .iconbox{background:#76e6ff20;color:var(--cyan)}
+.tile h3{font-size:1.32rem;margin-bottom:9px}.tile p{color:#c1cfe5}.tag{display:inline-block;border:1px solid #72859b;padding:5px 10px;border-radius:100px;font-size:.71rem;font-weight:850;letter-spacing:.04em;color:#d6e3f5;text-transform:uppercase}
+.agent-cards{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.agent-card{background:#151f35;border:1px solid #3e5370;border-radius:17px;overflow:hidden;display:grid;grid-template-columns:44% 1fr;min-height:270px}
+.agent-card img{height:100%;width:100%;object-fit:cover;object-position:top}
+.agent-card div{padding:24px;align-self:center}.agent-card h3{font-size:2rem;margin:8px 0}
+.agent-card p{color:#c0cee3;font-size:.94rem;line-height:1.65}.green{color:var(--lime)}.purple{color:var(--violet)}
+.locker{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.locker-item{background:#121d31;border-radius:14px;border:1px dashed #56708a;padding:20px}
+.locker-item .count{font-size:2rem;font-weight:1000;color:#8ad0e9;margin-bottom:22px}
+.locker-item h3{margin-bottom:7px;font-size:1.03rem}.locker-item p{margin:0;color:#b9c8df;font-size:.84rem}
+.lab{border:1px solid #6de6d173;border-radius:18px;padding:36px;background:radial-gradient(circle at 85% 0,#1e5c6070,transparent 45%),linear-gradient(140deg,#152f39,#111c30);display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center}
+.lab h2{margin:10px 0}.terminal{padding:24px;background:#070d15;border:1px solid #5acba3;border-radius:12px;font-family:ui-monospace,Consolas,monospace;box-shadow:0 8px 28px #0005}
+.terminal strong{display:block;color:var(--lime);font-size:.8rem;margin-bottom:19px}.terminal p{font-size:.93rem;color:#bde8d5;margin:0 0 10px}.terminal .waiting{color:var(--gold)}
+.fine{font-size:.87rem;color:#bfd0e7;line-height:1.65}
+.parent-box{border-left:4px solid var(--lime);background:#19233b;border-radius:0 12px 12px 0;padding:22px 28px;max-width:850px}
+.parent-box p{margin:0;color:#d9e4f4;line-height:1.7}
+footer{background:#070b16;border-top:1px solid #2b3b54;padding:30px 0}
+.footer-content{display:flex;justify-content:space-between;gap:20px;align-items:center;color:#b2c1da;font-size:.86rem}
+.footer-content a{color:var(--lime)}
+@media(max-width:920px){.hero{grid-template-columns:1fr;gap:40px;padding-top:58px}.hero-copy{max-width:730px}.hero-art{max-width:700px;width:100%;margin:auto;padding-bottom:25px}.agent-img{height:380px}.tiles,.locker{grid-template-columns:repeat(2,1fr)}.agent-card{grid-template-columns:44% 1fr}}
+@media(max-width:650px){.header-inner{min-height:67px}.wordmark{font-size:1rem}.mark{width:37px;height:37px}.menu{display:block}.navlinks{display:none;position:absolute;top:66px;right:0;left:0;padding:22px 24px;background:#0e1728;border-bottom:1px solid #41516b;flex-direction:column;align-items:stretch;gap:17px}.navlinks.open{display:flex}.hero{padding-top:48px;padding-bottom:75px}.hero-actions{flex-direction:column}.btn{width:100%}.hero-art{gap:9px}.agent-img{height:310px}.agent-tag{font-size:.64rem;padding:10px 12px}.section{padding-top:55px;padding-bottom:55px}.tiles,.locker,.agent-cards{grid-template-columns:1fr}.agent-card{grid-template-columns:42% 1fr;min-height:230px}.agent-card div{padding:15px}.agent-card h3{font-size:1.55rem}.lab{grid-template-columns:1fr;padding:23px}.footer-content{display:block}.footer-content p:last-child{margin-bottom:0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header>
+  <div class="wrap header-inner">
+    <a class="wordmark" href="/" aria-label="Cyber Squad HQ homepage"><span class="mark" aria-hidden="true">CS</span><span>CYBER <b>SQUAD</b></span></a>
+    <button class="menu" id="menu" type="button" aria-controls="nav" aria-expanded="false">Menu ☰</button>
+    <nav class="navlinks" id="nav" aria-label="Main navigation">
+      <a href="#academy">The academy</a>
+      <a href="#characters">Meet the heroes</a>
+      <a href="#collectibles">Collectibles</a>
+      <a class="nav-cta" href="#training">Training lab ↗</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="hero wrap">
+  <div class="hero-copy">
+    <div class="eyebrow">RECRUITMENT OPEN // ROOKIE ACADEMY</div>
+    <h1>Every click<br>is a <span class="gradient">clue.</span><br>Every kid<br>can be a <span class="highlight">hero.</span></h1>
+    <p class="lede">Meet Cipher and Nyx. Crack mysterious codes, spot online traps, and discover the skills that make a smart digital defender.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#academy">Explore Rookie Academy ↗</a>
+      <a class="btn" href="#training">See the training lab</a>
+    </div>
+    <p class="note"><span class="dot" aria-hidden="true"></span> For Grades 3–6 · Created for curious minds · Book in development</p>
+  </div>
+  <div class="hero-art" aria-label="Meet Cipher and Nyx">
+    <img class="agent-img" src="assets/cipher.jpg" width="463" height="540" alt="Cipher, the mysterious green-clad Cyber Squad guide wearing an angular black mask">
+    <img class="agent-img" src="assets/nyx.jpg" width="463" height="540" alt="Nyx, the purple cyberpunk Cyber Squad detective wearing glasses and a face covering">
+    <span class="agent-tag">● TWO HEROES. ONE CYBER SQUAD.</span>
+  </div>
+</section>
+<section id="academy" class="section alt">
+  <div class="wrap">
+    <div class="section-heading">
+      <div class="eyebrow">YOUR MISSION STARTS HERE</div>
+      <h2>Not another homework book.</h2>
+      <p class="sub">Cyber Squad: Rookie Academy combines comic-style storytelling, creative puzzles, and beginner cybersecurity lessons in one colourful adventure.</p>
+    </div>
+    <div class="tiles">
+      <article class="tile"><div class="iconbox" aria-hidden="true">01</div><h3>10 story missions</h3><p>Follow a continuing mystery while learning about passwords, privacy, scams, networks, and more.</p><span class="tag">Volume 1 in development</span></article>
+      <article class="tile"><div class="iconbox" aria-hidden="true">02</div><h3>Level-up puzzles</h3><p>Each mission gets a little tougher. Decode messages, follow clues, and unlock the next discovery.</p><span class="tag">Grades 3–6</span></article>
+      <article class="tile"><div class="iconbox" aria-hidden="true">03</div><h3>Practice for real</h3><p>Explore an approved training webpage and learn why website source code can reveal hidden clues.</p><span class="tag">Safe browser lab coming soon</span></article>
+    </div>
+  </div>
+</section>
+<section class="section" id="characters">
+  <div class="wrap">
+    <div class="section-heading"><div class="eyebrow">THE TEAM</div><h2>Meet your mission guides.</h2><p class="sub">Two very different ways of thinking. One shared goal: helping new recruits become safer, smarter explorers of technology.</p></div>
+    <div class="agent-cards">
+      <article class="agent-card"><img src="assets/cipher.jpg" width="463" height="540" loading="lazy" alt="Cipher in green futuristic clothing"><div><div class="eyebrow">GUIDE // GREEN</div><h3 class="green">CIPHER</h3><p>Calm under pressure. Loves patterns, puzzles, and looking for the details everyone else missed.</p></div></article>
+      <article class="agent-card"><img src="assets/nyx.jpg" width="463" height="540" loading="lazy" alt="Nyx in purple cyberpunk clothing"><div><div class="eyebrow">DETECTIVE // PURPLE</div><h3 class="purple">NYX</h3><p>Bold, creative, and always asking one more question. She knows when something seems too good to be true.</p></div></article>
+    </div>
+  </div>
+</section>
+<section class="section alt" id="collectibles">
+  <div class="wrap">
+    <div class="section-heading"><div class="eyebrow">THE EVIDENCE LOCKER</div><h2>Keep the clues. Collect the wins.</h2><p class="sub">Printable bonus cards are being prepared for release with the book. No sign-up or personal information will be required.</p></div>
+    <div class="locker">
+      <article class="locker-item"><div class="count">#001</div><h3>BUG-9</h3><p>Villain card · Coming soon</p></article>
+      <article class="locker-item"><div class="count">#002</div><h3>Decoy Download</h3><p>Evidence card · Coming soon</p></article>
+      <article class="locker-item"><div class="count">#003</div><h3>Code Decoder</h3><p>Cipher tool · Coming soon</p></article>
+      <article class="locker-item"><div class="count">#004</div><h3>Route Detective</h3><p>Router card · Coming soon</p></article>
+      <article class="locker-item"><div class="count">#005</div><h3>Source Sleuth</h3><p>Training card · Coming soon</p></article>
+      <article class="locker-item"><div class="count">#006</div><h3>GHOST Dossier</h3><p>Mystery card · Coming soon</p></article>
+    </div>
+  </div>
+</section>
+<section class="section" id="training">
+  <div class="wrap">
+    <div class="lab">
+      <div>
+        <div class="eyebrow">SPECIAL MISSION // 009</div>
+        <h2>YOUR FIRST HACK<span class="highlight">!</span></h2>
+        <p class="sub">A hands-on puzzle is on its way. You'll investigate a training webpage designed specifically for Cyber Squad, uncover a hidden clue, and unlock GHOST's fictional vault.</p>
+        <p class="fine"><strong>For kids and families:</strong> this will be a simulation on a webpage we own and permit you to inspect. There is no account required, and the challenge never asks you to try hacking someone else's website or device.</p>
+        <span class="tag">Lab undergoing review · Coming soon</span>
+      </div>
+      <div class="terminal" role="img" aria-label="Decorative fictional training-terminal status display">
+        <strong>CYBER SQUAD // TRAINING TERMINAL</strong>
+        <p>&gt; Mission 009: YOUR FIRST HACK!</p>
+        <p>&gt; Environment: approved simulation</p>
+        <p>&gt; Requires download: NO</p>
+        <p>&gt; Personal data collected: NONE</p>
+        <p class="waiting">&gt; Status: WAITING FOR LAUNCH _</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section alt" id="parents">
+  <div class="wrap">
+    <div class="section-heading"><div class="eyebrow">A NOTE TO PARENTS & EDUCATORS</div><h2>Curiosity with guardrails.</h2></div>
+    <div class="parent-box"><p>Cyber Squad is a fictional educational adventure. It teaches children how to think critically about online information, look after their privacy, and practise technology skills responsibly. Always get permission before examining or testing a system. The upcoming hands-on challenge uses only our own purpose-built practice webpage. No accounts, email sign-up, or personal submissions are needed for the planned free companion materials.</p></div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap footer-content"><p>© 2026 Cyber Squad HQ · Original educational adventure · Volume 1 in development</p><p><a href="#parents">For families</a> &nbsp;·&nbsp; <a href="#main">Back to top ↑</a></p></div></footer>
+<script>
+(() => {const b=document.getElementById('menu'),n=document.getElementById('nav');b.addEventListener('click',()=>{const isOpen=n.classList.toggle('open');b.setAttribute('aria-expanded',String(isOpen));});n.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{n.classList.remove('open');b.setAttribute('aria-expanded','false');}));})();
+</script>
+</body>
+</html>
